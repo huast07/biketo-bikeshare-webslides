@@ -151,3 +151,21 @@ export function caption(id: string, box: Box, heading: string, body: string): Sl
     { fontSize: 22, align: 'center', lineHeight: 1.25 },
   );
 }
+
+type VisibilityMode = 'show' | 'hide' | 'toggle';
+
+/** A click interaction that shows, hides or toggles another element (a pop-up panel here). */
+export function onClickSetVisibility(id: string, targetId: string, mode: VisibilityMode) {
+  return { id, trigger: 'click' as const, action: { type: 'setVisibility' as const, targetId, mode } };
+}
+
+/** A pop-up panel, hidden until a hotspot or button opens it. */
+export function detailPanel(
+  id: string,
+  heading: string,
+  html: string,
+  box: Box,
+  options: { modal?: boolean; placement?: 'center' | 'left' | 'right' | 'bottom'; size?: number } = {},
+): SlideElement {
+  return createElement('panel', { id, title: heading, html, ...box, ...options });
+}

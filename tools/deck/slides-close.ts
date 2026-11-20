@@ -1,5 +1,5 @@
 import { createElement, createSlide, type Slide } from '@webslides/schema';
-import { card, COLORS, CONTENT_WIDTH, eyebrow, SLIDE, text, title } from './kit';
+import { card, COLORS, CONTENT_WIDTH, detailPanel, eyebrow, onClickSetVisibility, SLIDE, text, title } from './kit';
 import { appIcon, appStoreButton } from './slides-story';
 
 const SOURCES = [
@@ -122,6 +122,8 @@ interface AskOption {
   heading: string;
   body: string;
   detail: string;
+  /** What Bike Share would provide, the phases of the work, and what Bike Share gets back. */
+  more: { provide: readonly string[]; phases: readonly string[]; benefits: readonly string[] };
 }
 
 const ASKS: readonly AskOption[] = [
@@ -130,25 +132,106 @@ const ASKS: readonly AskOption[] = [
     color: COLORS.green,
     heading: 'Integrate bike scanning into BikeTO',
     body: 'Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.',
-    detail: 'One app from planning to docking. Needs access to Bike Share’s rental and unlock platform, and member sign-in.',
+    detail: 'One app from planning to docking, built around safe routes.',
+    more: {
+      provide: [
+        'Partner access to the rental and unlock platform, with a test environment',
+        'Member sign-in with an existing Bike Share account',
+        'A technical contact, and agreed security and privacy terms',
+      ],
+      phases: [
+        'Agree on scope, data and privacy terms',
+        'Build and test against Bike Share’s test environment',
+        'Pilot with a small group of members',
+        'Launch to all riders on the App Store',
+      ],
+      benefits: [
+        'A second way to rent, built around safe routes',
+        'More trips from riders who already plan with BikeTO',
+        'BikeTO builds and maintains the app side',
+      ],
+    },
   },
   {
     tier: 'NEXT BEST CASE',
     color: COLORS.sky,
     heading: 'Bring BikeTO’s features into the Bike Share app',
     body: 'Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.',
-    detail: 'Plus 3D designs for phone attachments on Bike Share bikes (concept on the previous slide), so riders can follow directions hands-free.',
+    detail: 'Plus 3D-designed phone mounts for Bike Share bikes (previous slide).',
+    more: {
+      provide: [
+        'Time with the Bike Share app team to choose features',
+        'A path to ship them in the official app',
+        'Bikes to fit and ride-test the phone mount',
+      ],
+      phases: [
+        'Pick the first features together',
+        'Share BikeTO’s designs, routing approach and lessons',
+        'Build them into the Bike Share app with its team',
+        'Prototype the mount, ride-test it, then pilot it on a set of bikes',
+      ],
+      benefits: [
+        'Features already proven with Toronto riders',
+        'Safer trips for members, inside the official app',
+        'Hands-free directions with the phone mount',
+      ],
+    },
   },
   {
     tier: 'ALTERNATIVE CASE',
     color: COLORS.gold,
     heading: 'Partner app for safe bike navigation',
     body: 'Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.',
-    detail: 'For example through the Bike Share app, website, newsletters, social media and station signage.',
+    detail: 'Through the Bike Share app, website, newsletters, social media and stations.',
+    more: {
+      provide: [
+        'Mentions in the app, website, newsletters and social media',
+        'Permission to name Bike Share Toronto as a partner',
+        'Space on station signage, such as a QR code',
+      ],
+      phases: [
+        'Agree on messaging and branding',
+        'Launch together, ideally at the start of a riding season',
+        'Review the results after the season',
+      ],
+      benefits: [
+        'A free, safe navigation tool to point riders to',
+        'Nothing to build or maintain',
+        'Rider feedback from BikeTO shared with Bike Share',
+      ],
+    },
   },
 ];
-const ASK = { width: 540, height: 680, gap: 40, top: 262 } as const;
+const ASK = { width: 540, height: 710, gap: 40, top: 250 } as const;
 const BADGE = { height: 54, width: 290 } as const;
+const MORE_BUTTON = { width: 260, height: 64, inset: 44 } as const;
+const MORE_PANEL = { x: SLIDE.left, y: 250, width: SLIDE.right - SLIDE.left, height: 600 } as const;
+
+const list = (items: readonly string[], tag: 'ul' | 'ol') => `<${tag}>${items.map((item) => `<li>${item}</li>`).join('')}</${tag}>`;
+
+function morePanel(option: AskOption, index: number) {
+  const { provide, phases, benefits } = option.more;
+  const html =
+    `<h3 style="color: ${option.color}">What Bike Share provides</h3>${list(provide, 'ul')}` +
+    `<h3 style="color: ${option.color}">How it would roll out</h3>${list(phases, 'ol')}<p style="color: ${COLORS.muted}">Timing to set together once we pick this path.</p>` +
+    `<h3 style="color: ${option.color}">What Bike Share gets back</h3>${list(benefits, 'ul')}`;
+  const tier = option.tier.charAt(0) + option.tier.slice(1).toLowerCase();
+  return detailPanel(`ask_panel${index + 1}`, `${tier}: ${option.heading}`, html, MORE_PANEL, { modal: true });
+}
+
+function moreButton(option: AskOption, index: number, x: number) {
+  return createElement('button', {
+    id: `ask_more${index + 1}`,
+    label: 'More detail',
+    variant: 'secondary',
+    x: x + MORE_BUTTON.inset,
+    y: ASK.top + ASK.height - MORE_BUTTON.inset - MORE_BUTTON.height,
+    width: MORE_BUTTON.width,
+    height: MORE_BUTTON.height,
+    style: { radius: MORE_BUTTON.height / 2 },
+    interactions: [onClickSetVisibility(`ask_more${index + 1}_open`, `ask_panel${index + 1}`, 'show')],
+  });
+}
 
 function askCard(option: AskOption, index: number) {
   const x = SLIDE.left + index * (ASK.width + ASK.gap);
@@ -169,10 +252,12 @@ function askCard(option: AskOption, index: number) {
     }),
     text(
       `ask_text${index + 1}`,
-      { x: inner, y: ASK.top + 130, width: innerWidth, height: ASK.height - 170 },
+      { x: inner, y: ASK.top + 130, width: innerWidth, height: ASK.height - 130 - MORE_BUTTON.inset - MORE_BUTTON.height - 16 },
       `<h3>${option.heading}</h3><p>${option.body}</p><p>&nbsp;</p><p style="color: ${COLORS.muted}">${option.detail}</p>`,
       { fontSize: 29, lineHeight: 1.4 },
     ),
+    moreButton(option, index, x),
+    morePanel(option, index),
   ];
 }
 

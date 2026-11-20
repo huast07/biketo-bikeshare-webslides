@@ -41,8 +41,20 @@ export function createBikeToDeck(): Deck {
       closeSlide(),
     ],
     master: { elements: masterElements() },
-    // Breathing room between list items, which the default rich-text style sets to none.
-    customCss: '.ws-rich li{margin-bottom:.55em}.ws-rich li:last-child{margin-bottom:0}',
+    customCss: [
+      // Breathing room between list items, which the default rich-text style sets to none.
+      '.ws-rich li{margin-bottom:.55em}.ws-rich li:last-child{margin-bottom:0}',
+      // The mount hotspots sit over numbers drawn on the render: keep the number visible and
+      // show only the pulsing ring (on phones the hotspots are labelled buttons instead).
+      `.ws-slide:not(.ws-slide-stacked) [data-element-id^="mount_hotspot"] .ws-hotspot{background:transparent;border-color:transparent}`,
+      // Pop-up panels read at the same size as the slide text they sit beside.
+      '.ws-slide:not(.ws-slide-stacked) [data-element-type="panel"] .ws-panel{font-size:38px}',
+      '.ws-panel-body h3{margin-top:.9em}.ws-panel-body h3:first-child{margin-top:0}',
+      // The ask panels read as three columns: provide, roll-out, and what Bike Share gets back.
+      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] .ws-rich{column-count:3;column-gap:1.6em}',
+      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] h3{margin-top:0;break-before:column}',
+      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] h3:first-child{break-before:auto}',
+    ].join(''),
     createdAt: DECK_TIMESTAMP,
     updatedAt: DECK_TIMESTAMP,
   });

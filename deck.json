@@ -2810,6 +2810,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 0
+          },
           "type": "text",
           "html": "<p>CONCEPT RENDER</p>",
           "textStyle": {
@@ -2833,6 +2836,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 1
+          },
           "type": "text",
           "html": "<h2>Hands-free riding: a phone mount for Bike Share bikes</h2>",
           "textStyle": {
@@ -2856,6 +2862,9 @@
           "altText": "Concept render: an iPhone showing BikeTO turn-by-turn directions, held in a green four-corner cradle on a tilt joint, clamped to a bike handlebar beside the stem",
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 2
+          },
           "type": "image",
           "src": "images/phone-mount-concept.svg",
           "fit": "contain"
@@ -2877,6 +2886,9 @@
           },
           "animations": [],
           "interactions": [],
+          "phone": {
+            "hidden": true
+          },
           "type": "shape",
           "shape": "ellipse",
           "html": "<p>1</p>",
@@ -2901,6 +2913,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 3
+          },
           "type": "text",
           "html": "<p><strong>Tool-free clamp</strong></p><p style=\"color: #a9bccd\">Fits beside the stem, with no changes to the bike.</p>",
           "textStyle": {
@@ -2926,6 +2941,9 @@
           },
           "animations": [],
           "interactions": [],
+          "phone": {
+            "hidden": true
+          },
           "type": "shape",
           "shape": "ellipse",
           "html": "<p>2</p>",
@@ -2950,6 +2968,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 6
+          },
           "type": "text",
           "html": "<p><strong>Four-corner cradle</strong></p><p style=\"color: #a9bccd\">Spring-loaded corners hold most phones, with or without a case.</p>",
           "textStyle": {
@@ -2975,6 +2996,9 @@
           },
           "animations": [],
           "interactions": [],
+          "phone": {
+            "hidden": true
+          },
           "type": "shape",
           "shape": "ellipse",
           "html": "<p>3</p>",
@@ -2999,6 +3023,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 9
+          },
           "type": "text",
           "html": "<p><strong>Tilt joint</strong></p><p style=\"color: #a9bccd\">Angles the screen toward the rider, so a glance is enough.</p>",
           "textStyle": {
@@ -3046,6 +3073,9 @@
           "style": {},
           "animations": [],
           "interactions": [],
+          "phone": {
+            "order": 12
+          },
           "type": "text",
           "html": "<p>Paired with BikeTO’s spoken directions and Lock Screen guidance, riders keep their eyes on the road.</p><p style=\"color: #a9bccd\">Concept render for illustration; the 3D designs are ready to prototype with Bike Share.</p>",
           "textStyle": {
@@ -3053,9 +3083,219 @@
             "lineHeight": 1.4
           },
           "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_hotspot1",
+          "x": 624,
+          "y": 822,
+          "width": 48,
+          "height": 48,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [
+            {
+              "id": "mount_hotspot1_toggle",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel1",
+                "mode": "toggle"
+              }
+            },
+            {
+              "id": "mount_hotspot1_hide2",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel2",
+                "mode": "hide"
+              }
+            },
+            {
+              "id": "mount_hotspot1_hide3",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel3",
+                "mode": "hide"
+              }
+            }
+          ],
+          "phone": {
+            "order": 4
+          },
+          "type": "hotspot",
+          "label": "Tool-free clamp details",
+          "pulse": true
+        },
+        {
+          "id": "mount_hotspot2",
+          "x": 608,
+          "y": 300,
+          "width": 48,
+          "height": 48,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [
+            {
+              "id": "mount_hotspot2_toggle",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel2",
+                "mode": "toggle"
+              }
+            },
+            {
+              "id": "mount_hotspot2_hide1",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel1",
+                "mode": "hide"
+              }
+            },
+            {
+              "id": "mount_hotspot2_hide3",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel3",
+                "mode": "hide"
+              }
+            }
+          ],
+          "phone": {
+            "order": 7
+          },
+          "type": "hotspot",
+          "label": "Four-corner cradle details",
+          "pulse": true
+        },
+        {
+          "id": "mount_hotspot3",
+          "x": 470,
+          "y": 773,
+          "width": 48,
+          "height": 48,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [
+            {
+              "id": "mount_hotspot3_toggle",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel3",
+                "mode": "toggle"
+              }
+            },
+            {
+              "id": "mount_hotspot3_hide1",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel1",
+                "mode": "hide"
+              }
+            },
+            {
+              "id": "mount_hotspot3_hide2",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "mount_panel2",
+                "mode": "hide"
+              }
+            }
+          ],
+          "phone": {
+            "order": 10
+          },
+          "type": "hotspot",
+          "label": "Tilt joint details",
+          "pulse": true
+        },
+        {
+          "id": "mount_panel1",
+          "x": 930,
+          "y": 215,
+          "width": 880,
+          "height": 640,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "phone": {
+            "order": 5
+          },
+          "type": "panel",
+          "title": "1. Tool-free clamp",
+          "html": "<p>Wraps the handlebar beside the stem and closes with a quick-release lever, so it goes on and comes off in seconds without tools.</p>\n<h3 style=\"color: #7fdaa6\">Design notes</h3><ul><li>Rubber-lined jaws grip firmly without scratching the bar</li><li>Sits clear of the bell, brake levers and basket</li><li>Nothing on the bike is drilled or replaced</li></ul>\n<h3 style=\"color: #7fdaa6\">To work out with Bike Share</h3><ul><li>Handlebar sizes on each bike model, including e-bikes</li><li>Whether mounts stay on the bikes or riders bring their own</li></ul>",
+          "modal": false,
+          "initiallyOpen": false
+        },
+        {
+          "id": "mount_panel2",
+          "x": 930,
+          "y": 215,
+          "width": 880,
+          "height": 640,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "phone": {
+            "order": 8
+          },
+          "type": "panel",
+          "title": "2. Four-corner cradle",
+          "html": "<p>Four spring-loaded corners hold the phone by its edges, so one design fits most phones, with or without a case.</p>\n<h3 style=\"color: #7fdaa6\">Design notes</h3><ul><li>Open sides keep the buttons, charging port and camera free</li><li>Padded corners soften bumps from potholes and streetcar tracks</li><li>One hand to put the phone in and take it out</li></ul>\n<h3 style=\"color: #7fdaa6\">To work out with Bike Share</h3><ul><li>Which phone sizes to support</li><li>Ride tests on rough Toronto streets</li></ul>",
+          "modal": false,
+          "initiallyOpen": false
+        },
+        {
+          "id": "mount_panel3",
+          "x": 930,
+          "y": 215,
+          "width": 880,
+          "height": 640,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "phone": {
+            "order": 11
+          },
+          "type": "panel",
+          "title": "3. Tilt joint",
+          "html": "<p>A ball joint between the arm and the cradle angles the screen toward the rider and holds it there.</p>\n<h3 style=\"color: #7fdaa6\">Design notes</h3><ul><li>Tilts for riders of different heights</li><li>Turns for portrait or landscape</li><li>Firm enough to stay put over bumps</li></ul>\n<h3 style=\"color: #7fdaa6\">To work out with Bike Share</h3><ul><li>Readability in bright sun and glare</li><li>Durability for a fleet that lives outdoors all year</li></ul>",
+          "modal": false,
+          "initiallyOpen": false
         }
       ],
-      "notes": "A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of the next best case on the following slide.",
+      "notes": "A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of the next best case on the following slide. Click a pulsing number on the render to open that part’s details.",
       "transition": {
         "effect": "fade",
         "duration": 400
@@ -3114,9 +3354,9 @@
         {
           "id": "ask_card1",
           "x": 110,
-          "y": 262,
+          "y": 250,
           "width": 540,
-          "height": 680,
+          "height": 710,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3140,7 +3380,7 @@
         {
           "id": "ask_badge1",
           "x": 154,
-          "y": 306,
+          "y": 294,
           "width": 290,
           "height": 54,
           "rotation": 0,
@@ -3168,9 +3408,9 @@
         {
           "id": "ask_text1",
           "x": 154,
-          "y": 392,
+          "y": 380,
           "width": 452,
-          "height": 510,
+          "height": 456,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3179,7 +3419,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Integrate bike scanning into BikeTO</h3><p>Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">One app from planning to docking. Needs access to Bike Share’s rental and unlock platform, and member sign-in.</p>",
+          "html": "<h3>Integrate bike scanning into BikeTO</h3><p>Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">One app from planning to docking, built around safe routes.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -3187,11 +3427,59 @@
           "prompt": "Click to add text"
         },
         {
+          "id": "ask_more1",
+          "x": 154,
+          "y": 852,
+          "width": 260,
+          "height": 64,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "radius": 32
+          },
+          "animations": [],
+          "interactions": [
+            {
+              "id": "ask_more1_open",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "ask_panel1",
+                "mode": "show"
+              }
+            }
+          ],
+          "type": "button",
+          "label": "More detail",
+          "variant": "secondary"
+        },
+        {
+          "id": "ask_panel1",
+          "x": 110,
+          "y": 250,
+          "width": 1700,
+          "height": 600,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "panel",
+          "title": "Best case: Integrate bike scanning into BikeTO",
+          "html": "<h3 style=\"color: #22a05a\">What Bike Share provides</h3><ul><li>Partner access to the rental and unlock platform, with a test environment</li><li>Member sign-in with an existing Bike Share account</li><li>A technical contact, and agreed security and privacy terms</li></ul><h3 style=\"color: #22a05a\">How it would roll out</h3><ol><li>Agree on scope, data and privacy terms</li><li>Build and test against Bike Share’s test environment</li><li>Pilot with a small group of members</li><li>Launch to all riders on the App Store</li></ol><p style=\"color: #a9bccd\">Timing to set together once we pick this path.</p><h3 style=\"color: #22a05a\">What Bike Share gets back</h3><ul><li>A second way to rent, built around safe routes</li><li>More trips from riders who already plan with BikeTO</li><li>BikeTO builds and maintains the app side</li></ul>",
+          "modal": true,
+          "initiallyOpen": false
+        },
+        {
           "id": "ask_card2",
           "x": 690,
-          "y": 262,
+          "y": 250,
           "width": 540,
-          "height": 680,
+          "height": 710,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3215,7 +3503,7 @@
         {
           "id": "ask_badge2",
           "x": 734,
-          "y": 306,
+          "y": 294,
           "width": 290,
           "height": 54,
           "rotation": 0,
@@ -3243,9 +3531,9 @@
         {
           "id": "ask_text2",
           "x": 734,
-          "y": 392,
+          "y": 380,
           "width": 452,
-          "height": 510,
+          "height": 456,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3254,7 +3542,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D designs for phone attachments on Bike Share bikes (concept on the previous slide), so riders can follow directions hands-free.</p>",
+          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D-designed phone mounts for Bike Share bikes (previous slide).</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -3262,11 +3550,59 @@
           "prompt": "Click to add text"
         },
         {
+          "id": "ask_more2",
+          "x": 734,
+          "y": 852,
+          "width": 260,
+          "height": 64,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "radius": 32
+          },
+          "animations": [],
+          "interactions": [
+            {
+              "id": "ask_more2_open",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "ask_panel2",
+                "mode": "show"
+              }
+            }
+          ],
+          "type": "button",
+          "label": "More detail",
+          "variant": "secondary"
+        },
+        {
+          "id": "ask_panel2",
+          "x": 110,
+          "y": 250,
+          "width": 1700,
+          "height": 600,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "panel",
+          "title": "Next best case: Bring BikeTO’s features into the Bike Share app",
+          "html": "<h3 style=\"color: #5bb8f0\">What Bike Share provides</h3><ul><li>Time with the Bike Share app team to choose features</li><li>A path to ship them in the official app</li><li>Bikes to fit and ride-test the phone mount</li></ul><h3 style=\"color: #5bb8f0\">How it would roll out</h3><ol><li>Pick the first features together</li><li>Share BikeTO’s designs, routing approach and lessons</li><li>Build them into the Bike Share app with its team</li><li>Prototype the mount, ride-test it, then pilot it on a set of bikes</li></ol><p style=\"color: #a9bccd\">Timing to set together once we pick this path.</p><h3 style=\"color: #5bb8f0\">What Bike Share gets back</h3><ul><li>Features already proven with Toronto riders</li><li>Safer trips for members, inside the official app</li><li>Hands-free directions with the phone mount</li></ul>",
+          "modal": true,
+          "initiallyOpen": false
+        },
+        {
           "id": "ask_card3",
           "x": 1270,
-          "y": 262,
+          "y": 250,
           "width": 540,
-          "height": 680,
+          "height": 710,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3290,7 +3626,7 @@
         {
           "id": "ask_badge3",
           "x": 1314,
-          "y": 306,
+          "y": 294,
           "width": 290,
           "height": 54,
           "rotation": 0,
@@ -3318,9 +3654,9 @@
         {
           "id": "ask_text3",
           "x": 1314,
-          "y": 392,
+          "y": 380,
           "width": 452,
-          "height": 510,
+          "height": 456,
           "rotation": 0,
           "opacity": 1,
           "locked": false,
@@ -3329,12 +3665,60 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Partner app for safe bike navigation</h3><p>Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">For example through the Bike Share app, website, newsletters, social media and station signage.</p>",
+          "html": "<h3>Partner app for safe bike navigation</h3><p>Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Through the Bike Share app, website, newsletters, social media and stations.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
           },
           "prompt": "Click to add text"
+        },
+        {
+          "id": "ask_more3",
+          "x": 1314,
+          "y": 852,
+          "width": 260,
+          "height": 64,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "radius": 32
+          },
+          "animations": [],
+          "interactions": [
+            {
+              "id": "ask_more3_open",
+              "trigger": "click",
+              "action": {
+                "type": "setVisibility",
+                "targetId": "ask_panel3",
+                "mode": "show"
+              }
+            }
+          ],
+          "type": "button",
+          "label": "More detail",
+          "variant": "secondary"
+        },
+        {
+          "id": "ask_panel3",
+          "x": 110,
+          "y": 250,
+          "width": 1700,
+          "height": 600,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "panel",
+          "title": "Alternative case: Partner app for safe bike navigation",
+          "html": "<h3 style=\"color: #f2c14e\">What Bike Share provides</h3><ul><li>Mentions in the app, website, newsletters and social media</li><li>Permission to name Bike Share Toronto as a partner</li><li>Space on station signage, such as a QR code</li></ul><h3 style=\"color: #f2c14e\">How it would roll out</h3><ol><li>Agree on messaging and branding</li><li>Launch together, ideally at the start of a riding season</li><li>Review the results after the season</li></ol><p style=\"color: #a9bccd\">Timing to set together once we pick this path.</p><h3 style=\"color: #f2c14e\">What Bike Share gets back</h3><ul><li>A free, safe navigation tool to point riders to</li><li>Nothing to build or maintain</li><li>Rider feedback from BikeTO shared with Bike Share</li></ul>",
+          "modal": true,
+          "initiallyOpen": false
         }
       ],
       "notes": "Three ways to work together, from deepest to lightest. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus phone attachments for the bikes (3D designs are ready). Alternative: promote BikeTO as a partner app. Ask which path they want to explore, and who to follow up with.",
@@ -3529,7 +3913,7 @@
   "sheets": [],
   "names": {},
   "analyses": {},
-  "customCss": ".ws-rich li{margin-bottom:.55em}.ws-rich li:last-child{margin-bottom:0}",
+  "customCss": ".ws-rich li{margin-bottom:.55em}.ws-rich li:last-child{margin-bottom:0}.ws-slide:not(.ws-slide-stacked) [data-element-id^=\"mount_hotspot\"] .ws-hotspot{background:transparent;border-color:transparent}.ws-slide:not(.ws-slide-stacked) [data-element-type=\"panel\"] .ws-panel{font-size:38px}.ws-panel-body h3{margin-top:.9em}.ws-panel-body h3:first-child{margin-top:0}.ws-slide:not(.ws-slide-stacked) [data-element-id^=\"ask_panel\"] .ws-rich{column-count:3;column-gap:1.6em}.ws-slide:not(.ws-slide-stacked) [data-element-id^=\"ask_panel\"] h3{margin-top:0;break-before:column}.ws-slide:not(.ws-slide-stacked) [data-element-id^=\"ask_panel\"] h3:first-child{break-before:auto}",
   "customJs": "",
   "settings": {
     "navigation": "slides",
