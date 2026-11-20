@@ -3,6 +3,7 @@ import { BIKETO_THEME, COLORS, SLIDE, text } from './kit';
 import { askSlide, closeSlide, howSlide, whySlide } from './slides-close';
 import { demoSlides } from './slides-demos';
 import { featureSlides } from './slides-features';
+import { mountSlide } from './slides-mount';
 import { gapSlide, glanceSlide, titleSlide } from './slides-story';
 
 /** Fixed so the deck, and the site exported from it, is identical on every build. */
@@ -35,6 +36,7 @@ export function createBikeToDeck(): Deck {
       ...demoSlides(),
       howSlide(),
       whySlide(),
+      mountSlide(),
       askSlide(),
       closeSlide(),
     ],

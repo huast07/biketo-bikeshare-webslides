@@ -32,4 +32,5 @@ This force-pushes the contents of `site/` to the `gh-pages` branch, which GitHub
 ## Assets
 
 - `site-src/images/` - the App Store screenshots, resized to 640 px wide, and the app icon.
+- `site-src/images/phone-mount-concept.svg` - the phone-mount concept render, drawn by `tools/mount_concept.py` around a frame of the ride recording (`ride-screen.jpg`).
 - `site-src/media/` - the screen recordings, re-encoded to 720 px wide H.264 by `tools/reencode.swift`.

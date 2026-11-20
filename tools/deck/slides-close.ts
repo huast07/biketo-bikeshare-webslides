@@ -137,7 +137,7 @@ const ASKS: readonly AskOption[] = [
     color: COLORS.sky,
     heading: 'Bring BikeTO’s features into the Bike Share app',
     body: 'Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.',
-    detail: 'Plus 3D designs for phone attachments on Bike Share bikes, so riders can follow directions hands-free.',
+    detail: 'Plus 3D designs for phone attachments on Bike Share bikes (concept on the previous slide), so riders can follow directions hands-free.',
   },
   {
     tier: 'ALTERNATIVE CASE',

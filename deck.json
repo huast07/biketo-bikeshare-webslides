@@ -2794,6 +2794,275 @@
       "hidden": false
     },
     {
+      "id": "mount",
+      "name": "Phone mount concept",
+      "elements": [
+        {
+          "id": "mount_eyebrow",
+          "x": 110,
+          "y": 92,
+          "width": 1200,
+          "height": 40,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<p>CONCEPT RENDER</p>",
+          "textStyle": {
+            "fontSize": 24,
+            "fontWeight": 700,
+            "color": "#7fdaa6",
+            "letterSpacing": 3
+          },
+          "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_title",
+          "x": 110,
+          "y": 136,
+          "width": 1700,
+          "height": 90,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<h2>Hands-free riding: a phone mount for Bike Share bikes</h2>",
+          "textStyle": {
+            "fontSize": 32,
+            "fontWeight": 700,
+            "color": "#ffffff"
+          },
+          "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_render",
+          "x": 130,
+          "y": 215,
+          "width": 727,
+          "height": 800,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "altText": "Concept render: an iPhone showing BikeTO turn-by-turn directions, held in a green four-corner cradle on a tilt joint, clamped to a bike handlebar beside the stem",
+          "animations": [],
+          "interactions": [],
+          "type": "image",
+          "src": "images/phone-mount-concept.svg",
+          "fit": "contain"
+        },
+        {
+          "id": "mount_marker1",
+          "x": 930,
+          "y": 270,
+          "width": 60,
+          "height": 60,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "fill": "#091a2a",
+            "stroke": "#7fdaa6",
+            "strokeWidth": 4
+          },
+          "animations": [],
+          "interactions": [],
+          "type": "shape",
+          "shape": "ellipse",
+          "html": "<p>1</p>",
+          "textStyle": {
+            "fontSize": 26,
+            "fontWeight": 700,
+            "color": "#7fdaa6",
+            "align": "center",
+            "verticalAlign": "middle"
+          }
+        },
+        {
+          "id": "mount_part1",
+          "x": 1020,
+          "y": 266,
+          "width": 790,
+          "height": 130,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<p><strong>Tool-free clamp</strong></p><p style=\"color: #a9bccd\">Fits beside the stem, with no changes to the bike.</p>",
+          "textStyle": {
+            "fontSize": 28,
+            "lineHeight": 1.35
+          },
+          "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_marker2",
+          "x": 930,
+          "y": 420,
+          "width": 60,
+          "height": 60,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "fill": "#091a2a",
+            "stroke": "#7fdaa6",
+            "strokeWidth": 4
+          },
+          "animations": [],
+          "interactions": [],
+          "type": "shape",
+          "shape": "ellipse",
+          "html": "<p>2</p>",
+          "textStyle": {
+            "fontSize": 26,
+            "fontWeight": 700,
+            "color": "#7fdaa6",
+            "align": "center",
+            "verticalAlign": "middle"
+          }
+        },
+        {
+          "id": "mount_part2",
+          "x": 1020,
+          "y": 416,
+          "width": 790,
+          "height": 130,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<p><strong>Four-corner cradle</strong></p><p style=\"color: #a9bccd\">Spring-loaded corners hold most phones, with or without a case.</p>",
+          "textStyle": {
+            "fontSize": 28,
+            "lineHeight": 1.35
+          },
+          "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_marker3",
+          "x": 930,
+          "y": 570,
+          "width": 60,
+          "height": 60,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "fill": "#091a2a",
+            "stroke": "#7fdaa6",
+            "strokeWidth": 4
+          },
+          "animations": [],
+          "interactions": [],
+          "type": "shape",
+          "shape": "ellipse",
+          "html": "<p>3</p>",
+          "textStyle": {
+            "fontSize": 26,
+            "fontWeight": 700,
+            "color": "#7fdaa6",
+            "align": "center",
+            "verticalAlign": "middle"
+          }
+        },
+        {
+          "id": "mount_part3",
+          "x": 1020,
+          "y": 566,
+          "width": 790,
+          "height": 130,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<p><strong>Tilt joint</strong></p><p style=\"color: #a9bccd\">Angles the screen toward the rider, so a glance is enough.</p>",
+          "textStyle": {
+            "fontSize": 28,
+            "lineHeight": 1.35
+          },
+          "prompt": "Click to add text"
+        },
+        {
+          "id": "mount_callout_card",
+          "x": 930,
+          "y": 730,
+          "width": 880,
+          "height": 230,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {
+            "fill": "#11283d",
+            "stroke": "#1d3a55",
+            "strokeWidth": 2,
+            "radius": 28
+          },
+          "animations": [],
+          "interactions": [],
+          "phone": {
+            "hidden": true
+          },
+          "type": "shape",
+          "shape": "roundRect",
+          "html": "",
+          "textStyle": {}
+        },
+        {
+          "id": "mount_callout",
+          "x": 970,
+          "y": 760,
+          "width": 800,
+          "height": 180,
+          "rotation": 0,
+          "opacity": 1,
+          "locked": false,
+          "hidden": false,
+          "style": {},
+          "animations": [],
+          "interactions": [],
+          "type": "text",
+          "html": "<p>Paired with BikeTO’s spoken directions and Lock Screen guidance, riders keep their eyes on the road.</p><p style=\"color: #a9bccd\">Concept render for illustration; the 3D designs are ready to prototype with Bike Share.</p>",
+          "textStyle": {
+            "fontSize": 25,
+            "lineHeight": 1.4
+          },
+          "prompt": "Click to add text"
+        }
+      ],
+      "notes": "A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of the next best case on the following slide.",
+      "transition": {
+        "effect": "fade",
+        "duration": 400
+      },
+      "hidden": false
+    },
+    {
       "id": "ask",
       "name": "The ask",
       "elements": [
@@ -2985,7 +3254,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D designs for phone attachments on Bike Share bikes, so riders can follow directions hands-free.</p>",
+          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D designs for phone attachments on Bike Share bikes (concept on the previous slide), so riders can follow directions hands-free.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
