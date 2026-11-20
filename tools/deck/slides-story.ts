@@ -55,7 +55,7 @@ export function titleSlide(): Slide {
     hideMaster: true,
     transition: { effect: 'fade', duration: 500 },
     notes:
-      'Introduce BikeTO: a free iPhone app for turn-by-turn bike navigation in Toronto, with Bike Share, bike parking and the TTC built in. Goal for today: show what BikeTO does, and ask whether there is a way to work together.',
+      'Introduce BikeTO: a free iPhone app for turn-by-turn bike navigation in Toronto, with Bike Share, bike parking and the TTC built in. Goal for today: show the product, then agree on how we work together.',
     elements: [
       appIcon('title_icon', SLIDE.left, 230),
       text(
@@ -67,20 +67,20 @@ export function titleSlide(): Slide {
       text(
         'title_tagline',
         { x: SLIDE.left, y: 550, width: 860, height: 150 },
-        '<p>Bike directions for Toronto that favour bike lanes, with Bike Share, bike parking and the TTC built in.</p>',
+        '<p>Safer bike navigation for Toronto, with Bike Share, bike parking and the TTC built in.</p>',
         { fontSize: 40, lineHeight: 1.25, color: COLORS.white },
       ),
       text(
         'title_status',
         { x: SLIDE.left, y: 720, width: 860, height: 50 },
-        '<p>Free on the App Store &middot; No account, no ads, no tracking</p>',
+        '<p>Live on the App Store &middot; Free &middot; No account, no ads, no tracking</p>',
         { fontSize: 26, fontWeight: 600, color: COLORS.greenSoft },
       ),
       appStoreButton('title_store', SLIDE.left, 800),
       text(
         'title_presenter',
         { x: SLIDE.left, y: 930, width: 860, height: 50 },
-        '<p>Made by Sterling Huang</p>',
+        '<p>Presented by Sterling Huang, creator of BikeTO</p>',
         { fontSize: 24, color: COLORS.muted },
       ),
       phone('title_phone1', '01-bike-lanes-only', 1010, 110, 860, 'BikeTO comparing a bike-lanes-only route with a faster route on quiet streets'),
@@ -91,16 +91,16 @@ export function titleSlide(): Slide {
 
 const PROBLEMS = [
   [
-    'Bike lanes come second',
-    'General map apps don’t make it easy to choose bike lanes over busy roads, or show how much of a route is on a bike lane.',
+    'Maps aren’t built for Toronto cyclists',
+    'General map apps don’t let riders choose protected bike lanes over busy roads, or show how much of a route is on a bike lane.',
   ],
   [
     'One trip, three apps',
-    'A rider might find a bike in the Bike Share app, plan the route in a maps app and check the TTC in a third.',
+    'Riders find a bike in the Bike Share app, plan the route in a maps app and check the TTC in a third.',
   ],
   [
-    'Surprises on the way',
-    'Pass time running out, a full dock or nowhere to lock up can come as a surprise on the way.',
+    'The hard parts happen mid-ride',
+    'Pass time running out, a full dock at the destination, nowhere to lock up: riders find out when it’s too late.',
   ],
 ] as const;
 
@@ -129,13 +129,13 @@ export function gapSlide(): Slide {
     notes:
       'Frame the rider’s experience today. Every Bike Share trip involves picking a bike, a route, maybe the TTC, and a dock. Today that is spread across apps, and the stressful moments (full docks, pass time) happen mid-ride.',
     elements: [
-      eyebrow('gap_eyebrow', 'WHY I BUILT BIKETO'),
-      title('gap_title', 'A bike trip in Toronto often takes several apps'),
+      eyebrow('gap_eyebrow', 'THE GAP'),
+      title('gap_title', 'Toronto riders stitch every trip together across apps'),
       ...[0, 1, 2].flatMap(problemCard),
       text(
         'gap_answer',
         { x: SLIDE.left, y: 830, width: CONTENT_WIDTH, height: 120 },
-        '<p>BikeTO tries to put the whole trip in one app, using Toronto’s open data.</p>',
+        '<p>BikeTO brings the whole trip into one app, built on Toronto’s own open data.</p>',
         { fontSize: 38, fontWeight: 700, color: COLORS.greenSoft },
       ),
     ],
@@ -174,10 +174,10 @@ export function glanceSlide(): Slide {
     name: 'BikeTO at a glance',
     transition: { effect: 'fade', duration: 400 },
     notes:
-      'Six things BikeTO 2.0 does today. The next four slides look closer at the ones most related to Bike Share.',
+      'The six pillars of BikeTO 2.0, which shipped as a ground-up rebuild. The next four slides go deeper on the ones that matter most to Bike Share.',
     elements: [
       eyebrow('glance_eyebrow', 'BIKETO 2.0 AT A GLANCE'),
-      title('glance_title', 'What BikeTO does'),
+      title('glance_title', 'One app for every bike trip in Toronto'),
       ...[0, 1, 2, 3, 4, 5].flatMap(featureTile),
       phone('glance_phone', '07-turn-by-turn', 1420, 200, 800, 'BikeTO turn-by-turn guidance with the next turn and arrival time'),
     ],

@@ -56,7 +56,7 @@ export function howSlide(): Slide {
       'For anyone who asks how reliable it is: BikeTO runs its own routing servers (GraphHopper for bikes, OpenTripPlanner for transit) built from public data, refreshed regularly. Nothing depends on a rider account.',
     elements: [
       eyebrow('how_eyebrow', 'HOW IT WORKS'),
-      title('how_title', 'Built on Toronto’s open data'),
+      title('how_title', 'Built on Toronto’s own data'),
       ...[0, 1, 2, 3].flatMap(sourceCard),
       card('how_engine_card', ENGINE),
       text(
@@ -79,10 +79,10 @@ export function howSlide(): Slide {
 }
 
 const BENEFITS = [
-  ['More confident riders', 'Routes that favour bike lanes and quiet streets may help new riders try Bike Share, and come back.'],
-  ['Fewer surprises', 'Pass countdowns and full-dock rerouting can help riders avoid overtime fees and full stations.'],
-  ['Connected to transit', 'Bike Share can cover the first and last kilometre of TTC trips, planned in one place.'],
-  ['Available today, for free', 'BikeTO 2.0 is on the App Store and built on open data, with no ads and no tracking.'],
+  ['Safer, more confident riders', 'Routes that favour bike lanes and quiet streets help new riders try Bike Share, and come back.'],
+  ['Fewer bad moments', 'Pass countdowns and full-dock rerouting deal with overtime fees and full stations before they happen.'],
+  ['Connected to transit', 'Bike Share becomes the first and last kilometre of TTC trips, planned in one place.'],
+  ['Ready today, at no cost', 'BikeTO 2.0 is live on the App Store and built on open data, with no ads and no tracking.'],
 ] as const;
 const BENEFIT = { width: 830, height: 300, gapX: 40, gapY: 36, top: 280 } as const;
 
@@ -107,10 +107,10 @@ export function whySlide(): Slide {
     name: 'Why it matters',
     transition: { effect: 'fade', duration: 400 },
     notes:
-      'How BikeTO might support Bike Share’s goals: ridership, rider safety and satisfaction, and connections with transit.',
+      'Tie the product back to Bike Share’s goals: ridership, rider safety and satisfaction, and integration with transit. BikeTO already does this work for Bike Share riders today.',
     elements: [
-      eyebrow('why_eyebrow', 'HOW IT COULD HELP BIKE SHARE TORONTO'),
-      title('why_title', 'Better trips could mean more rides'),
+      eyebrow('why_eyebrow', 'WHY IT MATTERS TO BIKE SHARE TORONTO'),
+      title('why_title', 'Better trips mean more riders'),
       ...[0, 1, 2, 3].flatMap(benefitCard),
     ],
   });
@@ -129,22 +129,22 @@ const ASKS: readonly AskOption[] = [
     tier: 'BEST CASE',
     color: COLORS.green,
     heading: 'Integrate bike scanning into BikeTO',
-    body: 'Riders could scan a Bike Share bike in BikeTO to unlock it, then go straight into navigation, pass tracking and docking.',
-    detail: 'This would need access to Bike Share’s rental and unlock system, and member sign-in.',
+    body: 'Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.',
+    detail: 'One app from planning to docking. Needs access to Bike Share’s rental and unlock platform, and member sign-in.',
   },
   {
     tier: 'NEXT BEST CASE',
     color: COLORS.sky,
     heading: 'Bring BikeTO’s features into the Bike Share app',
-    body: 'Work with Bike Share’s team to bring bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting into the official app.',
-    detail: 'Plus 3D designs for phone mounts on Bike Share bikes, for hands-free directions.',
+    body: 'Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.',
+    detail: 'Plus 3D designs for phone attachments on Bike Share bikes, so riders can follow directions hands-free.',
   },
   {
     tier: 'ALTERNATIVE CASE',
     color: COLORS.gold,
     heading: 'Partner app for safe bike navigation',
-    body: 'Bike Share could mention BikeTO as a partner app that helps Toronto cyclists find safer routes.',
-    detail: 'For example in the Bike Share app, website, newsletters, social media or at stations.',
+    body: 'Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.',
+    detail: 'For example through the Bike Share app, website, newsletters, social media and station signage.',
   },
 ];
 const ASK = { width: 540, height: 680, gap: 40, top: 262 } as const;
@@ -182,10 +182,10 @@ export function askSlide(): Slide {
     name: 'The ask',
     transition: { effect: 'fade', duration: 400 },
     notes:
-      'Three options, from most to least involved. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus 3D-designed phone mounts for the bikes. Alternative: mention BikeTO as a partner app. Ask which, if any, they would like to explore, and who to follow up with.',
+      'Three ways to work together, from deepest to lightest. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus phone attachments for the bikes (3D designs are ready). Alternative: promote BikeTO as a partner app. Ask which path they want to explore, and who to follow up with.',
     elements: [
-      eyebrow('ask_eyebrow', 'HOW WE COULD WORK TOGETHER'),
-      title('ask_title', 'Three options, from most to least involved'),
+      eyebrow('ask_eyebrow', 'THE ASK'),
+      title('ask_title', 'Three ways to work together'),
       ...ASKS.flatMap(askCard),
     ],
   });
@@ -197,7 +197,7 @@ export function closeSlide(): Slide {
     name: 'Thank you',
     hideMaster: true,
     transition: { effect: 'fade', duration: 500 },
-    notes: 'Thank them for their time, and ask whether a follow-up conversation with their team would be welcome.',
+    notes: 'Thank them, and propose a working session with the product and partnerships team to pick a path.',
     elements: [
       appIcon('close_icon', (SLIDE.width - 180) / 2, 220, 180),
       text(
@@ -209,14 +209,14 @@ export function closeSlide(): Slide {
       text(
         'close_next',
         { x: 360, y: 590, width: 1200, height: 130 },
-        '<p>I’d welcome your thoughts, and a chance to talk further with your team.</p>',
+        '<p>Next step: a working session with Bike Share’s product and partnerships team to choose a path.</p>',
         { fontSize: 34, lineHeight: 1.35, align: 'center', color: COLORS.greenSoft },
       ),
       appStoreButton('close_store', (SLIDE.width - 520) / 2, 760),
       text(
         'close_presenter',
         { x: SLIDE.left, y: 890, width: CONTENT_WIDTH, height: 50 },
-        '<p>Sterling Huang &middot; BikeTO</p>',
+        '<p>Sterling Huang, creator of BikeTO</p>',
         { fontSize: 26, align: 'center', color: COLORS.muted },
       ),
     ],

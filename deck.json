@@ -90,7 +90,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>Bike directions for Toronto that favour bike lanes, with Bike Share, bike parking and the TTC built in.</p>",
+          "html": "<p>Safer bike navigation for Toronto, with Bike Share, bike parking and the TTC built in.</p>",
           "textStyle": {
             "fontSize": 40,
             "color": "#ffffff",
@@ -112,7 +112,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>Free on the App Store &middot; No account, no ads, no tracking</p>",
+          "html": "<p>Live on the App Store &middot; Free &middot; No account, no ads, no tracking</p>",
           "textStyle": {
             "fontSize": 26,
             "fontWeight": 600,
@@ -163,7 +163,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>Made by Sterling Huang</p>",
+          "html": "<p>Presented by Sterling Huang, creator of BikeTO</p>",
           "textStyle": {
             "fontSize": 24,
             "color": "#a9bccd"
@@ -213,7 +213,7 @@
           "fit": "contain"
         }
       ],
-      "notes": "Introduce BikeTO: a free iPhone app for turn-by-turn bike navigation in Toronto, with Bike Share, bike parking and the TTC built in. Goal for today: show what BikeTO does, and ask whether there is a way to work together.",
+      "notes": "Introduce BikeTO: a free iPhone app for turn-by-turn bike navigation in Toronto, with Bike Share, bike parking and the TTC built in. Goal for today: show the product, then agree on how we work together.",
       "transition": {
         "effect": "fade",
         "duration": 500
@@ -239,7 +239,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>WHY I BUILT BIKETO</p>",
+          "html": "<p>THE GAP</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -262,7 +262,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>A bike trip in Toronto often takes several apps</h2>",
+          "html": "<h2>Toronto riders stitch every trip together across apps</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -310,7 +310,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">01</p><h3>Bike lanes come second</h3><p style=\"color: #a9bccd\">General map apps don’t make it easy to choose bike lanes over busy roads, or show how much of a route is on a bike lane.</p>",
+          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">01</p><h3>Maps aren’t built for Toronto cyclists</h3><p style=\"color: #a9bccd\">General map apps don’t let riders choose protected bike lanes over busy roads, or show how much of a route is on a bike lane.</p>",
           "textStyle": {
             "fontSize": 28,
             "lineHeight": 1.35
@@ -357,7 +357,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">02</p><h3>One trip, three apps</h3><p style=\"color: #a9bccd\">A rider might find a bike in the Bike Share app, plan the route in a maps app and check the TTC in a third.</p>",
+          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">02</p><h3>One trip, three apps</h3><p style=\"color: #a9bccd\">Riders find a bike in the Bike Share app, plan the route in a maps app and check the TTC in a third.</p>",
           "textStyle": {
             "fontSize": 28,
             "lineHeight": 1.35
@@ -404,7 +404,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">03</p><h3>Surprises on the way</h3><p style=\"color: #a9bccd\">Pass time running out, a full dock or nowhere to lock up can come as a surprise on the way.</p>",
+          "html": "<p style=\"font-size: 64px; font-weight: 800; color: #22a05a\">03</p><h3>The hard parts happen mid-ride</h3><p style=\"color: #a9bccd\">Pass time running out, a full dock at the destination, nowhere to lock up: riders find out when it’s too late.</p>",
           "textStyle": {
             "fontSize": 28,
             "lineHeight": 1.35
@@ -425,7 +425,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>BikeTO tries to put the whole trip in one app, using Toronto’s open data.</p>",
+          "html": "<p>BikeTO brings the whole trip into one app, built on Toronto’s own open data.</p>",
           "textStyle": {
             "fontSize": 38,
             "fontWeight": 700,
@@ -482,7 +482,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>What BikeTO does</h2>",
+          "html": "<h2>One app for every bike trip in Toronto</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -794,7 +794,7 @@
           "fit": "contain"
         }
       ],
-      "notes": "Six things BikeTO 2.0 does today. The next four slides look closer at the ones most related to Bike Share.",
+      "notes": "The six pillars of BikeTO 2.0, which shipped as a ground-up rebuild. The next four slides go deeper on the ones that matter most to Bike Share.",
       "transition": {
         "effect": "fade",
         "duration": 400
@@ -803,7 +803,7 @@
     },
     {
       "id": "routes",
-      "name": "Riders choose their streets",
+      "name": "Safer streets, chosen by the rider",
       "elements": [
         {
           "id": "routes_eyebrow",
@@ -819,7 +819,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>FEATURE 1 OF 4</p>",
+          "html": "<p>CORE FEATURE 1 OF 4</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -842,7 +842,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>Riders choose their streets</h2>",
+          "html": "<h2>Safer streets, chosen by the rider</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -864,7 +864,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<ul><li><strong>Two route styles.</strong> Bike lanes only, or bike lanes plus quiet neighbourhood roads.</li><li><strong>Bike-lane share on every route.</strong> Riders see, for example, 93% vs 88% on bike lanes before they go.</li><li><strong>A clear trade-off.</strong> BikeTO says how much time the other route saves, such as “Saves 6 min”.</li><li><strong>Their favourite first.</strong> The rider’s preferred route style is always listed on top.</li></ul>",
+          "html": "<ul><li><strong>Two route styles.</strong> Bike lanes only, or bike lanes plus quiet neighbourhood roads.</li><li><strong>Bike-lane share on every route.</strong> Riders see, for example, 93% vs 88% on bike lanes before they go.</li><li><strong>An honest trade-off.</strong> BikeTO says how much time the other route saves, such as “Saves 6 min”.</li><li><strong>Their favourite first.</strong> The rider’s preferred route style is always listed on top.</li></ul>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -911,7 +911,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"color: #7fdaa6\"><strong>How it could help Bike Share riders</strong></p><p>New and occasional riders can pick routes they feel comfortable on, which may help them ride again.</p>",
+          "html": "<p style=\"color: #7fdaa6\"><strong>Why it matters to Bike Share</strong></p><p>New and occasional riders get routes they are comfortable riding, which builds the confidence to ride again.</p>",
           "textStyle": {
             "fontSize": 24,
             "lineHeight": 1.35
@@ -970,7 +970,7 @@
     },
     {
       "id": "bikeshare",
-      "name": "Made for Bike Share trips",
+      "name": "Built around the Bike Share trip",
       "elements": [
         {
           "id": "bikeshare_eyebrow",
@@ -986,7 +986,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>FEATURE 2 OF 4</p>",
+          "html": "<p>CORE FEATURE 2 OF 4</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -1009,7 +1009,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>Made for Bike Share trips</h2>",
+          "html": "<h2>Built around the Bike Share trip</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -1031,7 +1031,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<ul><li><strong>Walk to a station with bikes.</strong> Live bike and e-bike counts from Bike Share Toronto’s station feed.</li><li><strong>Pass countdown.</strong> Time left on the pass stays on screen, and on the Lock Screen, while riding.</li><li><strong>Full dock on the way.</strong> If the destination station fills up on the way, BikeTO reroutes to the next one and says why.</li><li><strong>Ends at a free dock.</strong> Trips finish at a station with open docks, then walk the last few metres.</li></ul>",
+          "html": "<ul><li><strong>Walk to a station with bikes.</strong> Live bike and e-bike counts from Bike Share Toronto’s station feed.</li><li><strong>Pass countdown.</strong> Time left on the pass stays on screen, and on the Lock Screen, while riding.</li><li><strong>Full dock? Switched.</strong> If the destination station fills up on the way, BikeTO reroutes to the next one and says why.</li><li><strong>Ends at a free dock.</strong> Trips finish at a station with open docks, then walk the last few metres.</li></ul>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -1078,7 +1078,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"color: #7fdaa6\"><strong>How it could help Bike Share riders</strong></p><p>Could help riders avoid overtime fees and full docks, two common frustrations.</p>",
+          "html": "<p style=\"color: #7fdaa6\"><strong>Why it matters to Bike Share</strong></p><p>Helps riders avoid overtime fees and full-dock frustration, two moments that sour a trip.</p>",
           "textStyle": {
             "fontSize": 24,
             "lineHeight": 1.35
@@ -1153,7 +1153,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>FEATURE 3 OF 4</p>",
+          "html": "<p>CORE FEATURE 3 OF 4</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -1245,7 +1245,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"color: #7fdaa6\"><strong>How it could help Bike Share riders</strong></p><p>Shows Bike Share as a way to cover the first and last kilometre of TTC trips.</p>",
+          "html": "<p style=\"color: #7fdaa6\"><strong>Why it matters to Bike Share</strong></p><p>Positions Bike Share as the first and last kilometre of TTC trips.</p>",
           "textStyle": {
             "fontSize": 24,
             "lineHeight": 1.35
@@ -1341,7 +1341,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>FEATURE 4 OF 4</p>",
+          "html": "<p>CORE FEATURE 4 OF 4</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -1433,7 +1433,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p style=\"color: #7fdaa6\"><strong>How it could help Bike Share riders</strong></p><p>Spoken directions help riders keep their eyes on the road. A phone mount on Bike Share bikes could help further.</p>",
+          "html": "<p style=\"color: #7fdaa6\"><strong>Why it matters to Bike Share</strong></p><p>Hands-free guidance is safer guidance. A phone mount on Bike Share bikes would complete the picture.</p>",
           "textStyle": {
             "fontSize": 24,
             "lineHeight": 1.35
@@ -2649,7 +2649,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>Built on Toronto’s open data</h2>",
+          "html": "<h2>Built on Toronto’s own data</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -3107,7 +3107,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>HOW IT COULD HELP BIKE SHARE TORONTO</p>",
+          "html": "<p>WHY IT MATTERS TO BIKE SHARE TORONTO</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -3130,7 +3130,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>Better trips could mean more rides</h2>",
+          "html": "<h2>Better trips mean more riders</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -3178,7 +3178,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3 style=\"color: #7fdaa6\">More confident riders</h3><p>Routes that favour bike lanes and quiet streets may help new riders try Bike Share, and come back.</p>",
+          "html": "<h3 style=\"color: #7fdaa6\">Safer, more confident riders</h3><p>Routes that favour bike lanes and quiet streets help new riders try Bike Share, and come back.</p>",
           "textStyle": {
             "fontSize": 32,
             "lineHeight": 1.4
@@ -3225,7 +3225,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3 style=\"color: #7fdaa6\">Fewer surprises</h3><p>Pass countdowns and full-dock rerouting can help riders avoid overtime fees and full stations.</p>",
+          "html": "<h3 style=\"color: #7fdaa6\">Fewer bad moments</h3><p>Pass countdowns and full-dock rerouting deal with overtime fees and full stations before they happen.</p>",
           "textStyle": {
             "fontSize": 32,
             "lineHeight": 1.4
@@ -3272,7 +3272,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3 style=\"color: #7fdaa6\">Connected to transit</h3><p>Bike Share can cover the first and last kilometre of TTC trips, planned in one place.</p>",
+          "html": "<h3 style=\"color: #7fdaa6\">Connected to transit</h3><p>Bike Share becomes the first and last kilometre of TTC trips, planned in one place.</p>",
           "textStyle": {
             "fontSize": 32,
             "lineHeight": 1.4
@@ -3319,7 +3319,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3 style=\"color: #7fdaa6\">Available today, for free</h3><p>BikeTO 2.0 is on the App Store and built on open data, with no ads and no tracking.</p>",
+          "html": "<h3 style=\"color: #7fdaa6\">Ready today, at no cost</h3><p>BikeTO 2.0 is live on the App Store and built on open data, with no ads and no tracking.</p>",
           "textStyle": {
             "fontSize": 32,
             "lineHeight": 1.4
@@ -3327,7 +3327,7 @@
           "prompt": "Click to add text"
         }
       ],
-      "notes": "How BikeTO might support Bike Share’s goals: ridership, rider safety and satisfaction, and connections with transit.",
+      "notes": "Tie the product back to Bike Share’s goals: ridership, rider safety and satisfaction, and integration with transit. BikeTO already does this work for Bike Share riders today.",
       "transition": {
         "effect": "fade",
         "duration": 400
@@ -3381,7 +3381,7 @@
             "order": 1
           },
           "type": "text",
-          "html": "<h2>An idea: a phone mount for Bike Share bikes</h2>",
+          "html": "<h2>Hands-free riding: a phone mount for Bike Share bikes</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -3618,7 +3618,7 @@
             "order": 12
           },
           "type": "text",
-          "html": "<p>With spoken directions and Lock Screen guidance, a mount could help riders keep their eyes on the road.</p><p style=\"color: #a9bccd\">A concept render for illustration. The 3D designs could be prototyped together with Bike Share.</p>",
+          "html": "<p>Paired with BikeTO’s spoken directions and Lock Screen guidance, riders keep their eyes on the road.</p><p style=\"color: #a9bccd\">Concept render for illustration; the 3D designs are ready to prototype with Bike Share.</p>",
           "textStyle": {
             "fontSize": 25,
             "lineHeight": 1.4
@@ -3836,7 +3836,7 @@
           "initiallyOpen": false
         }
       ],
-      "notes": "A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs could be prototyped together with Bike Share. This is part of the next best case on the following slide. Click a pulsing number on the render to open that part’s details.",
+      "notes": "A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of the next best case on the following slide. Click a pulsing number on the render to open that part’s details.",
       "transition": {
         "effect": "fade",
         "duration": 400
@@ -3861,7 +3861,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>HOW WE COULD WORK TOGETHER</p>",
+          "html": "<p>THE ASK</p>",
           "textStyle": {
             "fontSize": 24,
             "fontWeight": 700,
@@ -3884,7 +3884,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h2>Three options, from most to least involved</h2>",
+          "html": "<h2>Three ways to work together</h2>",
           "textStyle": {
             "fontSize": 32,
             "fontWeight": 700,
@@ -3960,7 +3960,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Integrate bike scanning into BikeTO</h3><p>Riders could scan a Bike Share bike in BikeTO to unlock it, then go straight into navigation, pass tracking and docking.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">This would need access to Bike Share’s rental and unlock system, and member sign-in.</p>",
+          "html": "<h3>Integrate bike scanning into BikeTO</h3><p>Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">One app from planning to docking. Needs access to Bike Share’s rental and unlock platform, and member sign-in.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -4035,7 +4035,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to bring bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting into the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D designs for phone mounts on Bike Share bikes, for hands-free directions.</p>",
+          "html": "<h3>Bring BikeTO’s features into the Bike Share app</h3><p>Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">Plus 3D designs for phone attachments on Bike Share bikes, so riders can follow directions hands-free.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -4110,7 +4110,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<h3>Partner app for safe bike navigation</h3><p>Bike Share could mention BikeTO as a partner app that helps Toronto cyclists find safer routes.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">For example in the Bike Share app, website, newsletters, social media or at stations.</p>",
+          "html": "<h3>Partner app for safe bike navigation</h3><p>Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.</p><p>&nbsp;</p><p style=\"color: #a9bccd\">For example through the Bike Share app, website, newsletters, social media and station signage.</p>",
           "textStyle": {
             "fontSize": 29,
             "lineHeight": 1.4
@@ -4118,7 +4118,7 @@
           "prompt": "Click to add text"
         }
       ],
-      "notes": "Three options, from most to least involved. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus 3D-designed phone mounts for the bikes. Alternative: mention BikeTO as a partner app. Ask which, if any, they would like to explore, and who to follow up with.",
+      "notes": "Three ways to work together, from deepest to lightest. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus phone attachments for the bikes (3D designs are ready). Alternative: promote BikeTO as a partner app. Ask which path they want to explore, and who to follow up with.",
       "transition": {
         "effect": "fade",
         "duration": 400
@@ -4186,7 +4186,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>I’d welcome your thoughts, and a chance to talk further with your team.</p>",
+          "html": "<p>Next step: a working session with Bike Share’s product and partnerships team to choose a path.</p>",
           "textStyle": {
             "fontSize": 34,
             "color": "#7fdaa6",
@@ -4238,7 +4238,7 @@
           "animations": [],
           "interactions": [],
           "type": "text",
-          "html": "<p>Sterling Huang &middot; BikeTO</p>",
+          "html": "<p>Sterling Huang, creator of BikeTO</p>",
           "textStyle": {
             "fontSize": 26,
             "color": "#a9bccd",
@@ -4247,7 +4247,7 @@
           "prompt": "Click to add text"
         }
       ],
-      "notes": "Thank them for their time, and ask whether a follow-up conversation with their team would be welcome.",
+      "notes": "Thank them, and propose a working session with the product and partnerships team to pick a path.",
       "transition": {
         "effect": "fade",
         "duration": 500
@@ -4272,7 +4272,7 @@
         "animations": [],
         "interactions": [],
         "type": "text",
-        "html": "<p>BikeTO &middot; Bike directions for Toronto</p>",
+        "html": "<p>BikeTO &middot; Safer bike navigation for Toronto</p>",
         "textStyle": {
           "fontSize": 18,
           "color": "#a9bccd"

@@ -13,7 +13,7 @@ const FOOTER = { y: 1018, height: 40, fontSize: 18 } as const;
 function masterElements() {
   const style = { fontSize: FOOTER.fontSize, color: COLORS.muted };
   return [
-    text('master_footer', { x: SLIDE.left, y: FOOTER.y, width: 900, height: FOOTER.height }, '<p>BikeTO &middot; Bike directions for Toronto</p>', style),
+    text('master_footer', { x: SLIDE.left, y: FOOTER.y, width: 900, height: FOOTER.height }, '<p>BikeTO &middot; Safer bike navigation for Toronto</p>', style),
     text('master_number', { x: SLIDE.right - 200, y: FOOTER.y, width: 200, height: FOOTER.height }, '<p>{{slide_number}} / {{slide_count}}</p>', { ...style, align: 'right' }),
   ];
 }
