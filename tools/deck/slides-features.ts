@@ -41,7 +41,7 @@ function featureSlide(feature: Feature, index: number): Slide {
     transition: { effect: 'fade', duration: 400 },
     notes: feature.notes,
     elements: [
-      eyebrow(`${feature.id}_eyebrow`, `CORE FEATURE ${index + 1} OF ${FEATURE_COUNT}`),
+      eyebrow(`${feature.id}_eyebrow`, `FEATURE ${index + 1} OF ${FEATURE_COUNT}`),
       title(`${feature.id}_title`, feature.heading, { width: columnWidth, height: 140 }),
       text(
         `${feature.id}_points`,
@@ -53,7 +53,7 @@ function featureSlide(feature: Feature, index: number): Slide {
       text(
         `${feature.id}_callout`,
         { x: SLIDE.left + 40, y: CALLOUT.y + 30, width: columnWidth - 80, height: CALLOUT.height - 50 },
-        `<p style="color: ${COLORS.greenSoft}"><strong>Why it matters to Bike Share</strong></p><p>${feature.forBikeShare}</p>`,
+        `<p style="color: ${COLORS.greenSoft}"><strong>How it could help Bike Share riders</strong></p><p>${feature.forBikeShare}</p>`,
         { fontSize: 24, lineHeight: 1.35 },
       ),
       ...row.elements,
@@ -64,15 +64,15 @@ function featureSlide(feature: Feature, index: number): Slide {
 const FEATURES: readonly Feature[] = [
   {
     id: 'routes',
-    heading: 'Safer streets, chosen by the rider',
+    heading: 'Riders choose their streets',
     points: [
       ['Two route styles.', 'Bike lanes only, or bike lanes plus quiet neighbourhood roads.'],
       ['Bike-lane share on every route.', 'Riders see, for example, 93% vs 88% on bike lanes before they go.'],
-      ['An honest trade-off.', 'BikeTO says how much time the other route saves, such as “Saves 6 min”.'],
+      ['A clear trade-off.', 'BikeTO says how much time the other route saves, such as “Saves 6 min”.'],
       ['Their favourite first.', 'The rider’s preferred route style is always listed on top.'],
     ],
     forBikeShare:
-      'New and occasional riders get routes they are comfortable riding, which builds the confidence to ride again.',
+      'New and occasional riders can pick routes they feel comfortable on, which may help them ride again.',
     phones: [
       ['01-bike-lanes-only', 'Route options to Christie Pits Park: 32 minutes on bike lanes only, or 26 minutes with neighbourhood roads'],
       ['02-neighbourhood-roads', 'The faster neighbourhood-roads route selected, saving 6 minutes with 88% on bike lanes'],
@@ -82,15 +82,15 @@ const FEATURES: readonly Feature[] = [
   },
   {
     id: 'bikeshare',
-    heading: 'Built around the Bike Share trip',
+    heading: 'Made for Bike Share trips',
     points: [
       ['Walk to a station with bikes.', 'Live bike and e-bike counts from Bike Share Toronto’s station feed.'],
       ['Pass countdown.', 'Time left on the pass stays on screen, and on the Lock Screen, while riding.'],
-      ['Full dock? Switched.', 'If the destination station fills up on the way, BikeTO reroutes to the next one and says why.'],
+      ['Full dock on the way.', 'If the destination station fills up on the way, BikeTO reroutes to the next one and says why.'],
       ['Ends at a free dock.', 'Trips finish at a station with open docks, then walk the last few metres.'],
     ],
     forBikeShare:
-      'Helps riders avoid overtime fees and full-dock frustration, two moments that sour a trip.',
+      'Could help riders avoid overtime fees and full docks, two common frustrations.',
     phones: [
       ['09-bike-share-pass-timer', 'A Bike Share ride showing 18 minutes left on the pass'],
       ['08-station-full-switched', 'BikeTO switching to Queen St W / Bathurst St because Bloor St W / Shaw St is full'],
@@ -107,7 +107,7 @@ const FEATURES: readonly Feature[] = [
       ['TTC, then Bike Share.', 'Connects the last part of a trip from a station to a Bike Share dock.'],
       ['Ready to park.', 'Own-bike trips end at a City bike parking spot, with rack type and spaces.'],
     ],
-    forBikeShare: 'Positions Bike Share as the first and last kilometre of TTC trips.',
+    forBikeShare: 'Shows Bike Share as a way to cover the first and last kilometre of TTC trips.',
     phones: [
       ['03-bike-and-ride-on-the-ttc', 'A bike-and-ride trip that parks at the station because bikes are not allowed on the subway at rush hour'],
       ['04-ttc-then-bike-share', 'A trip that takes the TTC to Union Station, then Bike Share for the last part'],
@@ -126,7 +126,7 @@ const FEATURES: readonly Feature[] = [
       ['A map for cyclists.', 'Bike lanes, Bike Share stations with live counts, bike parking and repair shops.'],
     ],
     forBikeShare:
-      'Hands-free guidance is safer guidance. A phone mount on Bike Share bikes would complete the picture.',
+      'Spoken directions help riders keep their eyes on the road. A phone mount on Bike Share bikes could help further.',
     phones: [
       ['07-turn-by-turn', 'Turn-by-turn guidance: in 150 metres, turn left onto Bay West Teamway'],
       ['10-lock-screen-live-activity', 'The next turn shown as a Live Activity on the iPhone Lock Screen'],

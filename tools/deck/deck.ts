@@ -13,7 +13,7 @@ const FOOTER = { y: 1018, height: 40, fontSize: 18 } as const;
 function masterElements() {
   const style = { fontSize: FOOTER.fontSize, color: COLORS.muted };
   return [
-    text('master_footer', { x: SLIDE.left, y: FOOTER.y, width: 900, height: FOOTER.height }, '<p>BikeTO &middot; Briefing for Bike Share Toronto</p>', style),
+    text('master_footer', { x: SLIDE.left, y: FOOTER.y, width: 900, height: FOOTER.height }, '<p>BikeTO &middot; Bike directions for Toronto</p>', style),
     text('master_number', { x: SLIDE.right - 200, y: FOOTER.y, width: 200, height: FOOTER.height }, '<p>{{slide_number}} / {{slide_count}}</p>', { ...style, align: 'right' }),
   ];
 }
@@ -50,10 +50,8 @@ export function createBikeToDeck(): Deck {
       // Pop-up panels read at the same size as the slide text they sit beside.
       '.ws-slide:not(.ws-slide-stacked) [data-element-type="panel"] .ws-panel{font-size:38px}',
       '.ws-panel-body h3{margin-top:.9em}.ws-panel-body h3:first-child{margin-top:0}',
-      // The ask panels read as three columns: provide, roll-out, and what Bike Share gets back.
-      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] .ws-rich{column-count:3;column-gap:1.6em}',
-      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] h3{margin-top:0;break-before:column}',
-      '.ws-slide:not(.ws-slide-stacked) [data-element-id^="ask_panel"] h3:first-child{break-before:auto}',
+      // A quiet Enlarge pill on each demo video, so it covers as little of the recording as it can.
+      '[data-element-id$="_enlarge"] .ws-button{font-size:20px;font-weight:600;background:rgba(9,26,42,.82);color:#fff;border:1px solid rgba(255,255,255,.4)}',
     ].join(''),
     createdAt: DECK_TIMESTAMP,
     updatedAt: DECK_TIMESTAMP,

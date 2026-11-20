@@ -8,9 +8,9 @@ import {
   SLIDE,
   text,
   title,
-  video,
   videoBox,
 } from './kit';
+import { popoutVideo } from './video-popout';
 
 /** Width over height of the App Store preview videos. */
 const PREVIEW_RATIO = 720 / 1560;
@@ -48,7 +48,7 @@ export function reelSlide(): Slide {
   const elements = REEL.flatMap(([file, heading, body], index) => {
     const box = videoBox(left + index * (width + REEL_LAYOUT.gap), REEL_LAYOUT.y, REEL_LAYOUT.height, PREVIEW_RATIO);
     return [
-      video(`reel_video${index + 1}`, file, box, `Screen recording: ${heading.slice(3)}. ${body}.`),
+      ...popoutVideo(`reel_video${index + 1}`, file, box, `Screen recording: ${heading.slice(3)}. ${body}.`, heading.slice(3)),
       captionUnder(`reel_caption${index + 1}`, box, heading, body),
     ];
   });
@@ -91,9 +91,9 @@ export function planningSlide(): Slide {
         `<h3 style="color: ${COLORS.greenSoft}">Bike Share + TTC to Yorkdale</h3><p>BikeTO compares Bike Share routes with “Bike Share, then transit” on Line 1, listing every walk, ride, dock and train step.</p><p>&nbsp;</p><h3 style="color: ${COLORS.sky}">Own bike + TTC to Etobicoke Civic Centre</h3><p>“Bike &amp; ride” parks the bike at the stop; “Bike on board” brings it on the bus. Both show live departures.</p>`,
         { fontSize: 26, lineHeight: 1.4 },
       ),
-      video('planning_video1', 'bike-share-ttc', sharedBox, 'Screen recording: planning a Bike Share and TTC trip to Yorkdale Shopping Centre'),
+      ...popoutVideo('planning_video1', 'bike-share-ttc', sharedBox, 'Screen recording: planning a Bike Share and TTC trip to Yorkdale Shopping Centre', 'Bike Share + TTC'),
       captionUnder('planning_caption1', sharedBox, 'Bike Share rider', 'Bike Share, then Line 1'),
-      video('planning_video2', 'own-bike-ttc', ownBikeBox, 'Screen recording: planning an own-bike and TTC trip to Etobicoke Civic Centre'),
+      ...popoutVideo('planning_video2', 'own-bike-ttc', ownBikeBox, 'Screen recording: planning an own-bike and TTC trip to Etobicoke Civic Centre', 'Own bike + TTC'),
       captionUnder('planning_caption2', ownBikeBox, 'Own-bike rider', 'Bike & ride or bike on board'),
     ],
   });
@@ -134,7 +134,7 @@ export function rideSlide(): Slide {
         `<p style="color: ${COLORS.muted}">Two-minute screen recording of BikeTO’s navigation mode on iPhone. The trip keeps going on the Lock Screen and in the Dynamic Island.</p>`,
         { fontSize: 24, lineHeight: 1.4 },
       ),
-      video('ride_video', 'navigation-mode', box, 'Screen recording: a Bike Share ride from Bloor St W / Spadina Ave to Christie Pits Park in navigation mode'),
+      ...popoutVideo('ride_video', 'navigation-mode', box, 'Screen recording: a Bike Share ride from Bloor St W / Spadina Ave to Christie Pits Park in navigation mode', 'Turn-by-turn ride'),
     ],
   });
 }
