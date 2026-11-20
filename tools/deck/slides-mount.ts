@@ -111,7 +111,7 @@ export function mountSlide(): Slide {
     name: 'Phone mount concept',
     transition: { effect: 'fade', duration: 400 },
     notes:
-      'A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of the next best case on the following slide. Click a pulsing number on the render to open that part’s details.',
+      'A concept render of the phone attachment for Bike Share bikes: a tool-free clamp beside the stem, a four-corner cradle and a tilt joint. It shows the idea; the 3D designs are ready to prototype with Bike Share. This is part of option 2 on the following slide. Click a pulsing number on the render to open that part’s details.',
     elements: [
       withPhoneOrder(eyebrow('mount_eyebrow', 'CONCEPT RENDER'), PHONE_ORDER.eyebrow),
       withPhoneOrder(title('mount_title', 'Hands-free riding: a phone mount for Bike Share bikes'), PHONE_ORDER.title),

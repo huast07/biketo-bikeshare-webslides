@@ -126,21 +126,21 @@ interface AskOption {
 
 const ASKS: readonly AskOption[] = [
   {
-    tier: 'BEST CASE',
+    tier: 'OPTION 1',
     color: COLORS.green,
     heading: 'Integrate bike scanning into BikeTO',
     body: 'Riders scan a Bike Share bike in BikeTO to unlock it, and the ride flows straight into navigation, pass tracking and docking.',
     detail: 'One app from planning to docking. Needs access to Bike Share’s rental and unlock platform, and member sign-in.',
   },
   {
-    tier: 'NEXT BEST CASE',
+    tier: 'OPTION 2',
     color: COLORS.sky,
     heading: 'Bring BikeTO’s features into the Bike Share app',
     body: 'Work with Bike Share’s team to add bike-lane routing, turn-by-turn guidance, pass countdowns and full-dock rerouting to the official app.',
     detail: 'Plus 3D designs for phone attachments on Bike Share bikes, so riders can follow directions hands-free.',
   },
   {
-    tier: 'ALTERNATIVE CASE',
+    tier: 'OPTION 3',
     color: COLORS.gold,
     heading: 'Partner app for safe bike navigation',
     body: 'Work with Bike Share to raise awareness of BikeTO as a partner app that helps Toronto cyclists navigate safely.',
@@ -182,10 +182,10 @@ export function askSlide(): Slide {
     name: 'The ask',
     transition: { effect: 'fade', duration: 400 },
     notes:
-      'Three ways to work together, from deepest to lightest. Best case: scanning and unlocking Bike Share bikes inside BikeTO. Next best: bring BikeTO features into the Bike Share app, plus phone attachments for the bikes (3D designs are ready). Alternative: promote BikeTO as a partner app. Ask which path they want to explore, and who to follow up with.',
+      'Three possible options, from deepest to lightest. Option 1: scanning and unlocking Bike Share bikes inside BikeTO. Option 2: bring BikeTO features into the Bike Share app, plus phone attachments for the bikes (3D designs are ready). Option 3: promote BikeTO as a partner app. Ask which path they want to explore, and who to follow up with.',
     elements: [
       eyebrow('ask_eyebrow', 'THE ASK'),
-      title('ask_title', 'Three ways to work together'),
+      title('ask_title', 'Three possible options'),
       ...ASKS.flatMap(askCard),
     ],
   });

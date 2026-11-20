@@ -24,7 +24,7 @@ export function createBikeToDeck(): Deck {
     id: 'deck_biketo_bikeshare',
     title: 'BikeTO for Bike Share Toronto',
     description:
-      'BikeTO, safer bike navigation for Toronto with Bike Share, bike parking and the TTC built in: core features, video demos, and three ways to work with Bike Share Toronto.',
+      'BikeTO, safer bike navigation for Toronto with Bike Share, bike parking and the TTC built in: core features, video demos, and three possible options for working with Bike Share Toronto.',
     slideSize: DEFAULT_SLIDE_SIZE,
     theme: BIKETO_THEME,
     settings: { navigation: 'slides', showProgress: true, showIndex: true, loop: false },
